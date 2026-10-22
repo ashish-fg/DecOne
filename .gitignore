@@ -1,0 +1,16 @@
+.env
+.env.*
+from-gpu
+data/frames/*
+data/jsonl/*
+data/processed/*
+data/raw/*
+!data/*/.gitkeep
+runs/*
+!runs/.gitkeep
+vendor/dohnuts/
+*.pt
+*.safetensors
+.venv/
+.cache/
+__pycache__/
