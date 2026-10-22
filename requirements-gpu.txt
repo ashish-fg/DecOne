@@ -1,0 +1,21 @@
+# Training and evaluation stack, as installed on the NVIDIA L40S (Python 3.12.3, CUDA 12.8).
+# pip install -r requirements-gpu.txt --extra-index-url https://download.pytorch.org/whl/cu128
+# then: pip install -e vendor/dohnuts
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+transformers==5.17.0
+peft==0.21.2
+flash-linear-attention==0.5.2
+fla-core==0.5.2
+accelerate==1.15.0
+safetensors==0.8.0
+huggingface-hub==1.33.0
+numpy==2.5.2
+pillow==12.3.0
+# Data factory (scripts/collect_labels.py) and plots. The GPU logs did not record these
+# versions; these are the versions resolved on the CPU VM (matplotlib: vendor/dohnuts plot group).
+pyarrow==26.0.0
+pandas==3.0.6
+scikit-learn==1.9.1
+datasets==5.1.0
+matplotlib==3.11.2

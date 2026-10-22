@@ -1,0 +1,13 @@
+# CPU-only demo/evaluation stack (no GPU, no flash-linear-attention: it needs Triton and
+# does not run on CPU; transformers' PyTorch Qwen3.5 ops are used instead).
+# pip install -r requirements-cpu.txt --extra-index-url https://download.pytorch.org/whl/cpu
+# then: pip install --no-deps -e vendor/dohnuts
+torch==2.11.0+cpu
+torchvision==0.26.0+cpu
+transformers==5.17.0
+peft==0.21.2
+accelerate==1.15.0
+safetensors==0.8.0
+huggingface-hub==1.33.0
+numpy==2.5.2
+pillow==12.3.0
