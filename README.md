@@ -10,8 +10,7 @@ Dubai, supervisor Dr. Mithun Mukherjee.
 `escalate_probs`. It is a rank-8 LoRA plus candidate scorer on
 [Dohnuts-0.1.0-0.8B](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B) (frozen
 `Qwen/Qwen3.5-0.8B` backbone and vision encoder). No motion control: the model
-stops at JSON. The design is frozen; see `01_PROJECT_CONTEXT.md`,
-`02_END_TO_END.md`, `03_DIAGRAMS_AND_WORKFLOWS.md`.
+stops at JSON. This repository holds the implementation only.
 
 Weights licence: CC BY-NC-SA 4.0 (thesis use only). Dohnuts code: Apache-2.0.
 
